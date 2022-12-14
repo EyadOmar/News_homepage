@@ -33,3 +33,19 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
 }
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+/* ------------------------------------------------- */
+/* ------------------Header------------------------- */
+/* ------------------------------------------------- */
