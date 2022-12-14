@@ -1,3 +1,21 @@
+:root {
+  /* ### Primary */
+  --clr-primary: hsl(35, 77%, 62%);
+  --clr-secondary: hsl(5, 85%, 63%);
+  /* ### Neutral */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+  /* typography */
+  --fs-lg: 4rem;
+  --fs-md: 2rem;
+  /* spacing  */
+  --spacing-xlg: 6rem;
+  --spacing-lg: 4rem;
+  --spacing-sm: 2rem;
+  --spacing-xsm: 1.33rem;
+}
 *,
 *::after,
 *::before {
@@ -10,4 +28,8 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
