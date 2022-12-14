@@ -49,6 +49,21 @@ img {
   padding-inline: 15px;
   margin-inline: auto;
 }
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
 .hidden {
   display: none;
 }
@@ -85,14 +100,40 @@ header nav img:nth-of-type(2) {
   padding: 2rem;
 }
 header nav ul {
-  /* display: none; */
-  position: absolute;
-  left: 50%;
-  top: 200px;
-  transform: translateX(-50%);
   list-style: none;
 }
 header nav ul a {
-  margin-bottom: var(--spacing-sm);
   font-size: 1.4rem;
+}
+@media (max-width: 992px) {
+  header nav ul {
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+    list-style: none;
+  }
+  header nav ul a {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 992px) {
+  nav img {
+    display: none;
+  }
+  nav ul {
+    display: flex !important;
+    position: relative;
+  }
+  nav ul a {
+    margin-right: 20px;
+    transition: color 0.3s;
+  }
+  nav ul li:last-child a {
+    margin: 0;
+  }
+  nav ul a:hover {
+    color: var(--clr-secondary);
+  }
 }
