@@ -19,22 +19,29 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
+    <div class="overlay hidden"></div>
+    <div class="side hidden"></div>
     <header>
       <div class="container">
-        <a href="#">Logo</a>
-        <img src="./images/icon-menu.svg" alt="Menu" />
+        <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         <nav>
-          <ul>
+          <img src="./images/icon-menu.svg" alt="Menu" />
+          <img
+            src="./images/icon-menu-close.svg"
+            alt="close menu"
+            class="hidden"
+          />
+          <ul class="hidden">
             <li><a href="#home">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#popular">Popular</a></li>
             <li><a href="#">Trending</a></li>
             <li><a href="#">Categories</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
       <section class="home" id="home">
         <div class="container">
           <img src="./images/image-web-3-mobile.jpg" alt="old computers" />
