@@ -151,9 +151,8 @@ section {
 .home .cover {
   background-image: url("../images/image-web-3-mobile.jpg");
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
-  width: 500px;
+  width: 1000px;
   height: 350px;
   flex-grow: 1;
   max-width: 100%;
@@ -179,4 +178,13 @@ section {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .home .cover {
+    height: 250px;
+  }
+  .home article {
+    display: flex;
+    gap: 1rem;
+  }
 }
