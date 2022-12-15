@@ -207,6 +207,10 @@ section {
 /* ------------------------------------------------- */
 /* ------------------Popular------------------------- */
 /* ------------------------------------------------- */
+.popular {
+  margin: 0;
+  padding-bottom: 2rem;
+}
 .popular .container {
   display: flex;
   flex-direction: column;
@@ -238,4 +242,18 @@ section {
   .popular .container {
     flex-direction: row;
   }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  max-width: 100%;
+}
+
+.attribution a {
+  display: inline-block;
+  cursor: pointer;
 }
