@@ -22,6 +22,9 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -162,7 +165,7 @@ section {
 .home button {
   cursor: pointer;
   width: fit-content;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
   background-color: var(--clr-secondary);
   border: 0;
   outline: 0;
@@ -170,6 +173,10 @@ section {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 700;
+  transition: background-color 0.3s;
+}
+.home button:hover {
+  background-color: var(--Very-dark-blue);
 }
 @media (min-width: 768px) {
   .home article {
@@ -187,16 +194,21 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /* width: 350px; */
 }
 .new h2 {
   color: var(--clr-primary);
   font-weight: 700;
 }
+.new article h3 {
+  transition: color 0.3s;
+}
+.new article h3:hover {
+  color: var(--clr-primary);
+}
 .new p {
   color: var(--grayish-blue);
   padding-block: 10px 1rem;
-  border-bottom: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--dark-grayish-blue);
 }
 .new article:last-of-type p {
   border: 0;
@@ -230,6 +242,10 @@ section {
   color: var(--Very-dark-blue);
   padding-bottom: 10px;
   font-weight: 800;
+  transition: color 0.3s;
+}
+.popular .box article h4:hover {
+  color: var(--clr-secondary);
 }
 .popular .box article p {
   color: var(--dark-grayish-blue);
