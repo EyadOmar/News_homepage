@@ -7,14 +7,6 @@
   --grayish-blue: hsl(233, 8%, 79%);
   --dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
-  /* typography */
-  --fs-lg: 4rem;
-  --fs-md: 2rem;
-  /* spacing  */
-  --spacing-xlg: 6rem;
-  --spacing-lg: 4rem;
-  --spacing-sm: 2rem;
-  --spacing-xsm: 1.33rem;
 }
 *,
 *::after,
@@ -114,7 +106,7 @@ header nav ul a {
     list-style: none;
   }
   header nav ul a {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 2rem;
     font-size: 1.4rem;
   }
 }
@@ -141,7 +133,7 @@ header nav ul a {
 /* ------------------Home------------------------- */
 /* ------------------------------------------------- */
 section {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 }
 .home .container {
   display: flex;
@@ -187,4 +179,28 @@ section {
     display: flex;
     gap: 1rem;
   }
+}
+/* ------------------------------------------------- */
+/* ------------------New------------------------- */
+/* ------------------------------------------------- */
+.new .container {
+  background-color: var(--Very-dark-blue);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 350px;
+}
+.new h2 {
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+.new p {
+  color: var(--grayish-blue);
+  padding-block: 10px 1rem;
+  border-bottom: 1px solid var(--grayish-blue);
+}
+.new article:last-of-type p {
+  border: 0;
 }
