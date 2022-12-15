@@ -204,3 +204,38 @@ section {
 .new article:last-of-type p {
   border: 0;
 }
+/* ------------------------------------------------- */
+/* ------------------Popular------------------------- */
+/* ------------------------------------------------- */
+.popular .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.popular .box {
+  display: flex;
+  gap: 1rem;
+}
+.popular .box img {
+  height: 200px;
+}
+.popular .box article h3 {
+  font-size: 4rem;
+  color: var(--grayish-blue);
+  padding-bottom: 1.2rem;
+  font-weight: 800;
+}
+.popular .box article h4 {
+  color: var(--Very-dark-blue);
+  font-size: 1.3;
+  padding-bottom: 10px;
+  font-weight: 800;
+}
+.popular .box article p {
+  color: var(--dark-grayish-blue);
+}
+@media (min-width: 768px) {
+  .popular .container {
+    flex-direction: row;
+  }
+}
